@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Baba Jee Ka Surprise</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Arial', sans-serif;
+      background-color: #f0f8ff;
+      text-align: center;
+      overflow: hidden;
+    }
+
+    h1 {
+      color: #006400;
+      margin-top: 40px;
+      text-shadow: 2px 2px 5px #000;
+    }
+
+    .gift-box {
+      width: 120px;
+      height: 120px;
+      background-color: #ff69b4;
+      margin: 50px auto;
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      font-size: 24px;
+      color: white;
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Baba Jee Ka Surprise</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Arial', sans-serif;
+      background-color: #f0f8ff;
+      text-align: center;
+      overflow: hidden;
+    }
+
+    h1 {
+      color: #006400;
+      margin-top: 40px;
+      text-shadow: 2px 2px 5px #000;
+    }
+
+    .gift-box {
+      width: 120px;
+      height: 120px;
+      background-color: #ff69b4;
+      margin: 50px auto;
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      font-size: 24px;
+      color: white;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      transition: transform 0.3s ease;
+    }
+
+    .gift-box:hover {
+      transform: scale(1.1);
+      background-color: #ff1493;
+    }
+
+    .baba-img {
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      width: 100px;
+      height: auto;
+      transform: translate(-50%, -50%) scale(0.2);
+      opacity: 0;
+      transition: all 3s ease-in-out;
+      z-index: 1;
+    }
+
+    .baba-img.show {
+      transform: translate(-50%, -50%) scale(1);
+      opacity: 1;
+    }
+
+    .flower {
+      position: absolute;
+      width: 30px;
+      height: 30px;
+      background-image: url('https://pngimg.com/uploads/flower/flower_PNG102.png');
+      background-size: cover;
+      animation: fall 6s linear infinite;
+      z-index: 2;
+    }
+
+    @keyframes fall {
+      0% { transform: translateY(-100px) rotate(0deg); }
+      100% { transform: translateY(100vh) rotate(360deg); }
+    }
+  </style>
+</head>
+<body>
+  <h1>Happy Birthday Baba Jee!</h1>
+  <div class="gift-box" onclick="startSurprise()">🎁 Click Me</div>
+
+  <img id="babaImage" class="baba-img" src="https://raw.githubusercontent.com/sahilpakistan/Fatima-repop/main/Baba-Je1-JPG.jpg" alt="Baba Jee"/>
+
+  <audio id="bgMusic" src="https://www.bensound.com/bensound-music/bensound-sunny.mp3"></audio>
+
+  <script>
+    function startSurprise() {
+      // Show Image
+      const img = document.getElementById('babaImage');
+      img.classList.add('show');
+
+      // Play Music
+      const music = document.getElementById('bgMusic');
+      music.play();
+
+      // Start Flower Rain
+      setInterval(createFlower, 300);
+    }
+
+    function createFlower() {
+      const flower = document.createElement('div');
+      flower.classList.add('flower');
+      flower.style.left = Math.random() * 100 + 'vw';
+      flower.style.animationDuration = (4 + Math.random() * 3) + 's';
+
+      document.body.appendChild(flower);
+
+      setTimeout(() => {
+        flower.remove();
+      }, 7000);
+    }
+  </script>
+</body>
+</html>￼Enter      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      transition: transform 0.3s ease;
+    }
+
+    .gift-box:hover {
+      transform: scale(1.1);
+      background-color: #ff1493;
+    }
+
+    .baba-img {
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      width: 100px;
+      height: auto;
+      transform: translate(-50%, -50%) scale(0.2);
+      opacity: 0;
+      transition: all 3s ease-in-out;
+      z-index: 1;
+    }
+
+    .baba-img.show {
+      transform: translate(-50%, -50%) scale(1);
+      opacity: 1;
+    }
+
+lower {
+      position: absolute;
+      width: 30px;
+      height: 30px;
+      background-image: url('https://pngimg.com/uploads/flower/flower_PNG102.png');
+      background-size: cover;
+      animation: fall 6s linear infinite;
+      z-index: 2;
+    }
+
+    @keyframes fall {
+      0% { transform: translateY(-100px) rotate(0deg); }
+      100% { transform: translateY(100vh) rotate(360deg); }
+    }
+  </style>
+</head>
+<body>
+  <h1>Happy Birthday Baba Jee!</h1>
+  <div class="gift-box" onclick="startSurprise()">🎁 Click Me</div>
+
+  <img id="babaImage" class="baba-img" src="https://raw.githubusercontent.com/sahilpakistan/Fatima-repop/main/Baba-Je1-JPG.jpg" alt="Baba Jee"/>
+
+  <audio id="bgMusic" src="https://www.bensound.com/bensound-music/bensound-sunny.mp3"></audio>
+
+  <script>
+    function startSurprise() {
